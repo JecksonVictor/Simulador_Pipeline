@@ -1,0 +1,30 @@
+Simulador Pipeline - IOAC
+Jeckson Victor de Oliveira
+(2015031132)
+
+Descrição:
+	Lê uma sequência de instruções e retorna suas dependencias.
+	Simulador do Pipeline-> Não funcionou
+
+Para executar:
+	make && ./bin/pipeline "arquivo"
+	
+	Onde arquivo é um arquivo de texto que contém todas as instruções a serem simuladas no pipeline. Esse arquivo deve estar na pasta 'data'.
+
+Regras:
+- 1 instrução por linha;
+- >>>>> 1 linha vazia no fim do arquivo; <<<<<
+	Necessário para que o eof() pare a leitura.
+- Formatos devem ser seguidos corretamente, inclusive espaços, quebras de linha, virgula e parenteses.:
+
+n. add $r1, $r2, $r3
+n. sub $r1, $r2, $r3
+n. lw $r1, n($r2)
+n. sw $r1, n($r2)
+n. beq $r1, $r2, n
+n. bne $r1, $r2, n
+n. j n
+
+onde n representa um número natural.
+
+obs: $zero não é aceito.
